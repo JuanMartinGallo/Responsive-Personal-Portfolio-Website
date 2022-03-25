@@ -653,6 +653,14 @@ footer{
     .portfolio__head-right{
         width: auto;
     }
+
+    .gallery-1{
+        margin: auto;
+    }
+
+    .gallery-2{
+        margin: auto;
+    }
 /*-------------CONTACT-------------*/
     .contact__container{
         gap: 2rem;
