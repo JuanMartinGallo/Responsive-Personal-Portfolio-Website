@@ -100,51 +100,68 @@
     <section id="portfolio">
         <div class="container portfolio__container">
             <div class="portfolio__head">
-                <h3>Mis trabajos</h3>
+                <h2>Mis trabajos</h2>
             </div>
-            <div class="portfolio__projects">
-                <a href="./Images/First Gallery/uno.jpeg" class="portfolio__projects-image">
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/dos.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/dos.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/tres.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/cuatro.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/cinco.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
+            <div class="gallery-1">
+                <article class="portfolio__project">
+                    <a href="./Images/First Gallery/uno.jpeg" class="portfolio__projects-image">
+                        <img src="./Images/First Gallery/uno.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/dos.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/dos.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/tres.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/uno.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/cuatro.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/uno.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/cinco.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/uno.jpeg" alt="">
+                    </a>
+                </article>
+            </div>
 
-                <a href="./Images/First Gallery/uno.jpeg" class="portfolio__projects-image">
-                    <img src="./Images/First Gallery/dos.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/dos.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/tres.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/cuatro.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
-                <a href="./Images/First Gallery/cinco.jpeg" class="portfolio__projects-image" hidden>
-                    <img src="./Images/First Gallery/uno.jpeg" alt="">
-                </a>
+            <div class="gallery-2">
+                <article class="portfolio__project">
+                    <a href="./Images/First Gallery/uno.jpeg" class="portfolio__projects-image">
+                        <img src="./Images/First Gallery/dos.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/dos.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/dos.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/tres.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/uno.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/cuatro.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/uno.jpeg" alt="">
+                    </a>
+                    <a href="./Images/First Gallery/cinco.jpeg" class="portfolio__projects-image" hidden>
+                        <img src="./Images/First Gallery/uno.jpeg" alt="">
+                    </a>
+                </article>
             </div>
         </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
+    
     <script>
-        $(document).ready(function(){
-            $('.portfolio__projects').magnificPopup({
+        $(document).ready(function () {
+            $('.gallery-1').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.gallery-2').magnificPopup({
                 delegate: 'a',
                 type: 'image',
                 gallery: {

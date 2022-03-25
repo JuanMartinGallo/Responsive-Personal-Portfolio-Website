@@ -350,31 +350,51 @@ section#services{
     gap: 3rem;
 }
 
-.portfolio__head h3{
+.portfolio__head h2{
     width: 25%;
 }
 
-.portfolio__projects{
+.portfolio__container{
     display: grid;
-    margin-top: 4rem;
-    margin-left: 10rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(1fr, 1fr);
     gap: 2rem;
+}
+
+.gallery-1{
+    margin: 0.1rem 25rem;
+}
+
+.gallery-2{
+    margin: 0.1rem 25rem;
+}
+
+.portfolio__project{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1rem;
+    margin: 50px;
 }
 
 .portfolio__projects-image{
     height: 20rem;
-    width: 30rem;
-    overflow: hidden;
-    border:15px solid #fff;
+    border: 1rem solid var(--color-white);
     overflow: hidden;
     box-shadow: 0 0 1.6rem rgba(0, 197, 187, 0.3);
-    margin: 20px;
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+}
+
+.portfolio__projects-image:hover{
+    box-shadow: none;
 }
 
 .portfolio__projects-image img{
     height: 100%;
-    width:100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -449,7 +469,7 @@ footer{
     color: var(--color-white);
     border-top: 1px solid var(--color-black);
 }
-/* --------------------MEDIA QUERIES (TABLETS)--------------------------------------- */
+/* ---------------------------------MEDIA QUERIES (TABLETS)---------------------------------------*/
 @media screen and (max-width: 1024px){
     h1{
         font-size: 3.6rem;
@@ -622,15 +642,11 @@ footer{
         grid-template-columns: 1fr;
     }
 
-    .services__left{
-        display: none;
-    }
-
     .services__cards{
         gap: 1rem;
     }
 /*-------------PORTFOLIO-------------*/
-    .portfolio__head h3{
+    .portfolio__head h2{
         width: 40%;
     }
 
@@ -646,7 +662,7 @@ footer{
         font-size: 1.7rem;
     }
 }
-/*-------------MEDIA QUERIES (PHONES)-------------*/
+/*--------------------------------MEDIA QUERIES (PHONES)----------------------------------*/
 @media screen and (max-width: 600px){
     .container{
         width: var(--container-width-sm);
@@ -744,12 +760,17 @@ footer{
         gap: 1fr;
     }
 
-    .portfolio__head h3{
+    .portfolio__head h2{
         width: var(--container-width-sm);
+        text-align: center;
     }
     
-    .portfolio__projects{
-        grid-template-columns: 1fr;
+    .gallery-1{
+        margin: auto;
+    }
+
+    .gallery-2{
+        margin: auto;
     }
 /*-------------CONTACT-------------*/
     .contact__container{
