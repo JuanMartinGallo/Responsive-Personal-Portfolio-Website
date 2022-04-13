@@ -1,1 +1,4 @@
-# Responsive Personal Portfolio Website Using HTML CSS And JavaScript
+# Responsive Personal Portfolio Website 
+- HTML 
+- CSS 
+- JavaScript
